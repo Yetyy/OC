@@ -1,0 +1,4 @@
+/home/yetyy/.local/share/Trash/files/F.txt
+/home/yetyy/google-disk/Laba1_OC/F.txt
+/home/yetyy/Рабочий стол/Laba1/F.txt
+/home/yetyy/F.txt

@@ -1,0 +1,9 @@
+#!/bin/bash 
+IFS=$'\n'
+echo "Write name of catalog"; read catalog 
+echo "Write name of extention"; read extention
+echo "Write name of search string"; read str
+echo "What is your surname?"; read surname;
+touch /$HOME/$surname.txt
+grep -r -n '$str' /$catalog/*.$extention
+

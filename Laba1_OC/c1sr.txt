@@ -1,0 +1,15 @@
+#!/bin/bash
+
+home_dir=~/
+
+subdirs=$(find $home_dir  -type d )
+
+result_file=$home_dir/subdir_sizes.txt
+
+for subdir in $subdirs; do
+size=$(du -s $subdir | awk '{print $1}')
+$subdir $size" >> $result_file
+done
+
+
+cat $result_file

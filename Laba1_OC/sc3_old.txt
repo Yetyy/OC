@@ -1,0 +1,17 @@
+#!/bin/bash 
+
+IFS=$'\n'
+
+echo "Write name of catalog"; read catalog 
+
+echo "Write name of extention"; read extention
+
+echo "Write name of search string"; read str
+
+echo "What is your surname?"; read surname;
+
+c="$str$extention"
+
+touch /home/yetyy/Рабочий\ стол/Laba1/$surname.txt
+
+find $catalog -name "$c" >/home/yetyy/Рабочий\ стол/Laba1/$surname.txt
